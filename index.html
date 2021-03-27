@@ -1,0 +1,1284 @@
+<!doctype html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="" style="overflow-x:hidden;">
+<!--<![endif]-->
+
+<head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta charset="UTF-8">
+	<title>Vakhula Food Factory</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+	<!--[if IE 8 ]>  
+		<link rel="stylesheet" href="lib/swiper-2.7.6/idangerous.swiper.css">
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="fonts/shipping-font/styles.css">
+	<link rel="stylesheet" href="styles/css/styles.css">
+	<link rel="stylesheet" href="styles/css/theme-common.css" id="theme">
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="lib/selectivizr-min.js"></script>
+		<![endif]-->
+	<script src="lib/modernizr.custom.04294.js"></script>
+	<!--[if IE 8 ]>
+		<script src="lib/respond/respond.min.js"></script>
+		<![endif]-->
+	<!--2gis-->
+	
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+	<style>
+    .button_slide {
+  color: #000;
+  border: 2px solid orange;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 orange;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 orange;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 orange;
+}
+
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px orange;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 orange;
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+    </style>
+</head>
+
+<body>
+	<div class="preloader-block">
+	    <img src="img/preloader.gif" alt="">
+	</div>
+	<div class="bx-panel-dummy"></div>
+	<div class="landing-wrap" id="landing-wrap">
+		<div class="wd-cut">
+			<!-- HEADER -->
+			<header class="main-header" id="main-header">
+	<div class="container">
+	
+		<div class="row main-header-top">
+			<div class="call-up pull-left">
+				<div>
+					<a href="tel:+919080756221"><i class="flaticon-phone72"></i>+91 90807 56221</a>
+				</div>
+			</div>
+			<div class="logo-main">
+				<a href="index.html" class="brand"><img src="img/vakhula2.svg" alt="Best Dessert"></a>
+			</div>
+			
+			<button type="button" class="mob-toggle" data-toggle="modal" data-target="#main-nav"></button>
+		</div>
+		<nav class="row" id="main-nav" aria-labelledby="main-nav" aria-hidden="true" data-keyboard="true" tabindex="-1" data-backdrop="true">
+			
+			<div class="listing">
+				<ul class="nav navbar-nav main-nav">
+					<li><a href="#main-slider" data-dismiss="modal">Home</a>
+					</li>
+					<li><a href="#s-list" data-dismiss="modal">Catalog</a>
+					</li>
+					<li><a href="#s-discounts" data-dismiss="modal">Discounts</a>
+					</li>
+					<li><a href="#s-why" data-dismiss="modal">Why Us?</a>
+					</li>
+					<!-- <li><a href="#s-video" data-dismiss="modal">Video about us</a>
+					</li> -->
+					<li><a href="#s-how-work" data-dismiss="modal">How it works</a>
+					</li>
+					<li><a href="#s-shopnum" data-dismiss="modal">The Store in Figures</a>
+					</li>
+					<li><a href="#s-deliv" data-dismiss="modal">Shipping</a>
+					</li>
+					<li><a href="#s-clients" data-dismiss="modal">Reviews</a>
+					</li>
+					<li><a href="#s-address" data-dismiss="modal">Contacts</a>
+					</li>
+					<li><a href="#s-contacts" data-dismiss="modal">Feedback</a>
+					</li>
+				</ul>
+				<a href="#" class="arr-nav prev disabled">&#9679; &#9679; &#9679;</a>
+				<a href="#" class="arr-nav next">&#9679; &#9679; &#9679;</a>
+			</div><!-- .listing --><!-- .container -->
+		</nav><!-- #main-nav --><!-- .row -->
+	</div><!-- .container -->
+</header>
+			
+			<div class="main-section">
+				<!-- Banner -->
+				<!-- <section id="main-slider" class="s-subscribe ">
+	<div id="main-banner" class="component component-fullwidth fxSoftScale">
+		<ul class="itemwrap">
+			<li class="current" style="background-image: url(img/subs-bg.jpg);">
+				<div class="mask"></div>
+			</li>
+			<li class="" style="background-image: url(img/video-blank.jpg);">
+				<div class="mask"></div>
+			</li>
+			<li class="" style="background-image: url(img/discounts-bg.jpg);">
+				<div class="mask"></div>
+			</li>
+		</ul>
+		<div class="container bd-arrows">
+			<a class="main-bd-arrow-prev bd-arrow-prev" href="#">Previous item</a>
+			<a class="main-bd-arrow-next bd-arrow-next" href="#">Next item</a>
+		</div>
+	</div>
+	<div class="wrap-a text-center">
+		<div class="container">
+			<div class="wrap">
+				<h1 class="b-title c-white">Our best desserts for you</h1>
+				<div class="sub-title c-white">We discover something new every day</div>
+				<form action="index.html" class="form-sub mt15 mb5">
+					<div class="form-group dtab text-left">
+						<div class="media-left">
+							<input type="email" class="form-control" placeholder="Your e-mail" data-notice="invalid e-mail" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="media-left text-right">
+							<button type="submit" class="btn btn-v2 btn-clicked btn-moema">Subscribe</button>
+						</div>
+					</div>
+				</form>
+				<div class="sub-imp text-left c-white">* subscribe for 10% discount</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section id="main-slider" class="s-subscribe">
+	<h2 class="hidden">Test</h2>
+    <div id="main-banner" class="component component-fullwidth swiper-container">
+        <div class="swiper-bg"></div>
+        <div class="swiper-mask"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<div class="slider-text">
+            		<div class="slider-title">
+            			Divine Baking Foods for your everyday needs
+            		</div>
+            		<div class="slider-description">
+            			<span class="hidden-xs">We become what we consume. Every foods made here are with purity, right ingrediants just the way as served to god.</span>
+            		</div>
+            	</div>
+            </div>
+            <div class="swiper-slide">
+	            <div class="slider-text">
+	            	<div class="slider-title">
+		            	We discover something new every day
+	            	</div>
+	            	<div class="slider-description">
+	            		Lorem ipsum dolor sit amet<span class="hidden-xs">, consectetur adipisicing elit. Maxime incidunt dolor expedita inventore iusto animi placeat rerum quod modi explicabo, enim voluptatibus ratione cumque! Inventore.
+	            	</div>
+            	</div>
+            </div>
+            <div class="swiper-slide">
+	            <div class="slider-text">
+	            	<div class="slider-title">
+			            Lorem ipsum dolor<span class="hidden-xs"> sit amet, consectetur</span>
+	            	</div>
+	            	<div class="slider-description">
+	            		Lorem ipsum dolor sit amet<span class="hidden-xs">, consectetur adipisicing elit. Maxime incidunt dolor expedita inventore iusto animi placeat rerum quod modi explicabo, enim voluptatibus ratione cumque! Inventore.
+	            	</div>
+            	</div>
+            </div>
+        </div>
+        <div class="swiper-button-prev flaticon-chevron14 hidden-xs"></div>
+		<div class="swiper-button-next flaticon-chevron15 hidden-xs"></div>
+    </div>
+</section>
+
+				<section>
+				    <div style="min-height: 500px; padding-top: 30px;" class="container">
+				        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                       <img src="catalog/swbread.png" class="stable full-w" alt="">
+                       <h4 style=" margin-top: 18px; color: white;">S/W BREAD
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">400 gms
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">4 days
+
+</p>
+                        </div>
+				         <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
+                        <div style="height: 100px;">
+                       <img style=" max-width: 100%;
+    height: auto;;" src="catalog/multigrain.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">WHOLE WHEAT MULTIGRAIN
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">400GMS
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/pizzabase.png"  alt="">
+                       <h4 style=" margin-top: 18px; color: white;">PIZZA BASE  8*2
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">4 days
+
+</p>
+                        </div>
+                        
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/pavbun.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">PAV BUN 40GM*4
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/chocolava.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">Chocolate Lava
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/Burgerbun.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">BURGER BUN(PACK OF 9)
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">75GM
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/vmuff.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">VANILA MUFFINS
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">40Gms
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/cbun.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">Cream Bun
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">40Gms
+
+</p>
+                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
+
+</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/vegpuff.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">Veg Puff
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
+
+
+
+</p>
+                      
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/eggpuff.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">Egg Puff
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
+
+
+
+</p>
+                      
+                        </div>
+                        
+                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
+                        <div style="height: 150px;">
+                       <img style=" max-width: 100%;
+    height: auto;" src="catalog/eggpuff.png"  alt=""></div>
+                       <h4 style=" margin-top: 18px; color: white;">Egg Puff
+
+
+</h4>
+                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
+
+
+
+</p>
+                      
+                        </div>
+                        
+                        <div id="outer">
+  <div class="button_slide slide_down">View More</div>
+                        </div>
+                        
+                        
+                        
+				    </div>
+				    
+				</section>
+				
+				
+				<!-- Why us? -->
+				<section id="s-why" class="s-why">
+	<div class="container">
+		<h2 class="b-title ct1 text-center">Why choose Vakhula?</h2>
+		<div class="row">
+			<div class="justify row-just">
+				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.2s">
+					<img src="img/why1.png" alt="">
+					<div class="desc">
+						<div class="name">Delicious and Quality</div>
+						<div class="text">We produce extensive range of baking products that are made with top quality ingredients and right baking practices giving you a delicious taste that customers get fond of.</div>
+					</div>
+				</div>
+				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.4s">
+					<img src="img/why2.png" alt="">
+					<div class="desc">
+						<div class="name">Professional staffs</div>
+						<div class="text">We follow strict baking procedure for staffs to maintain cleanliness and regular health checkups to give our customers hygienic food.</div>
+					</div>
+				</div>
+				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.6s">
+					<img src="img/why3.png" alt="">
+					<div class="desc">
+						<div class="name">Pricing</div>
+						<div class="text">Comparing to our competitors we provide far more better pricing for the quality of foods we provide making it best food and better profits for you in a longer run.</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+				
+				<!-- Video -->
+				
+				
+				<!-- How it Works -->
+				<section id="s-how-work" class="s-how-work">
+	<div class="container">
+		<div class="row text-center">
+			<h2 class="b-title ct1">How it works?</h2>
+			<div class="sub-title ct1">Everything is very simple!</div>
+		</div>
+		
+		<div class="row steps4">
+			<div class="col-xs-6 col-md-3 wow zoomIn animated" data-wow-duration="0.7s" data-wow-delay="0.2s">
+				<div class="rounded-shape">
+					<div class="shape-icon">
+						<i class="flaticon-shoppingcart9"></i>
+					</div>
+				</div>
+				<div class="title">
+					1. Choose The products from our catalog.
+				</div>
+				
+			</div>
+
+			<div class="col-xs-6 col-md-3 wow zoomIn animated" data-wow-duration="0.7s" data-wow-delay="0.4s">
+				<div class="rounded-shape">
+					<div class="shape-icon">
+						<i class="flaticon-clipboard109"></i>
+					</div>
+				</div>
+				<div class="title">
+					2. WhatsApp us the products you want.
+				</div>
+				
+			</div>
+
+			<div class="col-xs-6 col-md-3 wow zoomIn animated" data-wow-duration="0.7s" data-wow-delay="0.6s">
+				<div class="rounded-shape">
+					<div class="shape-icon">
+						<i class="flaticon-handshake1"></i>
+					</div>
+				</div>
+				<div class="title">
+					Confirm the Order.
+				</div>
+
+			</div>
+
+			<div class="col-xs-6 col-md-3 wow zoomIn animated" data-wow-duration="0.7s" data-wow-delay="0.8s">
+				<div class="rounded-shape">
+					<div class="shape-icon">
+						<i class="flaticon-happy50"></i>
+					</div>
+				</div>
+				<div class="title">
+					Receive your foods.
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- <div class="row steps">
+			<div class="step wow rollIn animated" data-wow-duration="0.7s" data-wow-offset="300">
+				<h2>Step 1. "Goods"</h2>
+				<div class="wrap dtab">
+					<div class="media-left vam">
+						<div class="desc">
+							<div class="dtab">
+								<div class="media-left vam">
+									<i class="ib icon-step flaticon-shoppingcart9"></i>
+								</div>
+								<div class="media-left text">
+									<div class="ib-vam"></div>
+									<div class="ib vam text-label">Choose and add products you like to cart </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step rght wow rollInRight animated" data-wow-duration="0.7s" data-wow-delay="0.25s" data-wow-offset="300">
+				<h2>Step 2. "Cart"</h2>
+				<div class="wrap dtab">
+					<div class="media-left vam">
+						<div class="desc">
+							<div class="dtab">
+								<div class="media-left vam">
+									<i class="ib icon-step flaticon-clipboard109"></i>
+								</div>
+								<div class="media-left text">
+									<div class="ib-vam"></div>
+									<div class="ib vam text-label">Fill in the details, choose shipping and payment methods</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step wow rollIn animated" data-wow-duration="0.7s" data-wow-delay="0.25s" data-wow-offset="300">
+				<h2>Step 3. "Order"</h2>
+				<div class="wrap dtab">
+					<div class="media-left vam">
+						<div class="desc">
+							<div class="dtab">
+								<div class="media-left vam">
+									<i class="ib icon-step flaticon-handshake1"></i>
+								</div>
+								<div class="media-left text">
+									<div class="ib-vam"></div>
+									<div class="ib vam text-label">Your order is complete. Wait for a courier or pickup and order yourself</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step rght wow rollInRight animated" data-wow-duration="0.7s" data-wow-delay="0.25s" data-wow-offset="300">
+				<h2>Step 4. "Receiving"</h2>
+				<div class="wrap dtab">
+					<div class="media-left vam">
+						<div class="desc">
+							<div class="dtab">
+								<div class="media-left vam">
+									<i class="ib icon-step flaticon-happy50"></i>
+								</div>
+								<div class="media-left text">
+									<div class="ib-vam"></div>
+									<div class="ib vam text-label">Receive and pay for your order. Bon appetite and welcome your feedback</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+</section>
+				
+				<!-- The Store in Figures -->
+				<section id="s-shopnum" class="s-shopnum bg2 para-block" style="background: url('img/shop-numbers-bg.jpg') center / cover no-repeat;">
+	<img class="s-parallax" src="img/shop-numbers-bg.jpg" alt="" data-parallax='{"y" : -230}'>
+	<div class="container">
+		<div class="row">
+			<h2 class="b-title c-white text-center">The store in figures</h2>
+			<div class="snum-items justify">
+				<div class="snum-item">
+					<div class="dtab">
+						<i class="snum-icon media-left flaticon-cooker4"></i>
+						<div class="media-left pl10">
+							<div class="num num-animate hidden-xs" data-finish="1185">0</div>
+							<div class="num num-animate hidden-big" data-finish="1185">1185</div>
+							<div class="snum-label">work days</div>
+						</div>
+					</div>
+				</div>
+				<div class="snum-item ">
+					<div class="dtab">
+						<i class="snum-icon media-left flaticon-cake14"></i>
+						<div class="media-left pl10">
+							<div class="num num-animate hidden-xs" data-finish="9845">0</div>
+							<div class="num num-animate hidden-big" data-finish="9845">9845</div>
+							<div class="snum-label">desserts</div>
+						</div>
+					</div>
+				</div>
+				<div class="snum-item ">
+					<div class="dtab">
+						<i class="snum-icon media-left flaticon-commercial15"></i>
+						<div class="media-left pl10">
+							<div class="num num-animate hidden-xs" data-finish="8305">0</div>
+							<div class="num num-animate hidden-big" data-finish="8305">8305</div>
+							<div class="snum-label">orders</div>
+						</div>
+					</div>
+				</div>
+				<div class="snum-item">
+					<div class="dtab">
+						<i class="snum-icon media-left flaticon-multiple25"></i>
+						<div class="media-left pl10">
+							<div class="num num-animate hidden-xs" data-finish="2502">0</div>
+							<div class="num num-animate hidden-big" data-finish="2502">2502</div>
+							<div class="snum-label">Subscribers</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<!-- Payment and delivery -->
+				<section id="s-deliv" class="s-deliv">
+	<div class="container">
+		<div class="row">
+			<div class="deliv-wrap justify">
+				<div class="deliv-col lf">
+					<div class="icon-deliv flaticon-delivery23"></div>
+					<h2 class="title">Shipping methods</h2>
+					<div class="line fadeInLeft animated wow" data-wow-duration="0.5s" data-wow-delay="0.2s">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4"><i class="shipping-icon-delivery-truck"></i></div>
+							<div class="col-xs-9 col-sm-8">
+								<div class="name">Delivery</div>
+								<div class="text">
+									We can deliver foods when bought wholesale with our logistics partners in very short time for a little service charge based on the location
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="line fadeInLeft animated wow" data-wow-duration="0.5s" data-wow-delay="0.6s">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4"><i class="shipping-icon-pickup-man"></i></div>
+							<div class="col-xs-9 col-sm-8">
+								<div class="name">Pickup:</div>
+								<div class="text">You can yourself pickup the prodcuts from our factory scheduling an appointment.</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="deliv-col rt">
+					<div class="icon-deliv flaticon-commerce"></div>
+					<h2 class="title">Payment methods</h2>
+					<div class="line fadeInRight animated wow" data-wow-duration="0.5s" data-wow-delay="0.4s">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3"><i class="shipping-icon-hand-bill"></i></div>
+							<div class="col-xs-9 col-sm-8">
+								<div class="name">Cash:</div>
+								<div class="text">You can pay by cash once you receive your order. .</div>
+							</div>
+						</div>
+					</div>
+					<div class="line fadeInRight animated wow" data-wow-duration="0.5s" data-wow-delay="0.8s">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3"><i class="shipping-icon-buy11"></i></div>
+							<div class="col-xs-9 col-sm-8">
+								<div class="name">Credit/Debit card:</div>
+								<div class="text">You can pay by credit/debit cards when ordering or immediately upon receiving the order</div>		
+							</div>
+						</div>							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<!-- Clients -->
+				<!-- Address -->
+				<section id="s-address" class="s-address">
+	<div class="container wow fadeIn " data-wow-delay="1s">
+		<div class="row">
+			<div class="text-center">
+				<h2 class="b-title">You can contact us</h2>
+				<div class="sub-b-title">in any convenient way</div>
+			</div>
+			<div class="adrs-items justify">
+				<div class="add-wrap  slideInLeft wow">
+					<a href="tel:88002340248" class="adrs-item flaticon-phone64">
+						<span class="name">Phone</span>
+						<span class="text">+91 90807 56221</span>
+					</a>
+				</div>
+				<div class="add-wrap  fadeIn  wow">
+					<a href="mailto:dorababu@vakhula.com" class="adrs-item flaticon-read4">
+						<span class="name">E-mail</span>
+						<span class="text"><u>dorababu@vakhula.com</u></span>
+					</a>
+				</div>
+				<div class="add-wrap  slideInRight wow">
+					<a href="geo:56.0009076512453,92.94674820537569;" class="adrs-item flaticon-location27">
+						<span class="name">Address</span>
+						<span class="text">84, Industrial Estate 3rd Cross Street, Sathya Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600032</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Map -->
+	<div class="s-map" id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15548.857671492418!2d80.2086664!3d13.0220134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64647025d8c97710!2sVakhula%20Food%20Factory!5e0!3m2!1sen!2sin!4v1616864883531!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+</section>
+				
+				
+
+			<!-- FOOTER -->
+			<footer>
+	
+	<div class="footer-container">
+		<div class="container">
+			<div class="col-xs-12 col-md-6">
+				<div class="copyright">
+					<a href="">Vakhula Foods Private Limited.</a>
+					
+				</div>	
+				<div class="subscription-form hidden-xs hidden-sm">
+					<div class="text subscription-title">Subscription:</div>
+					<form class="subscribe-form form-group" data-validate="true">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Enter e-mail" data-notice="Invalid e-mail" required>
+							<span class="input-group-btn">
+								<button class="btn btn-primary">
+									<span class="text"><span class="hidden-xs">Subscribe</span><span class="visible-xs"><i class="fa fa-angle-right"></i></span></span>
+								</button>
+							</span>
+						</div>
+						<div class="help-block with-errors"></div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</footer>
+		</div><!-- .wd-cut -->
+		
+		<div class="cart-alert closed" id="cart-alert" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
+	<div class="cart-alert-wrap bg1">
+		<div class="container">
+			
+		</div>
+	</div>
+</div>
+
+		<a href="#" id="sett-page" class="glyphicon glyphicon-cog hyde" data-toggle="modal" data-target="#modal_settings"></a>
+	
+		<!--Load libs-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="lib/jquery/jquery-1.11.3.min.js"><\/script>')</script>
+
+<!-- Load Bootstrap and bootstrap plugins -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="lib/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="lib/bootstrap-filestyle.min.js"></script>
+<!-- Load some plugins -->
+
+<script src="lib/swiper/js/swiper.jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" property="stylesheet">
+
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/sly.min.js"></script>
+<!--<script src="lib/countdown/jquery.countdown.min.js"></script>-->
+<script src="lib/device.js"></script>
+<script src="lib/jquery.parallax-scroll.js"></script>
+<script src="lib/intlTelInput/intlTelInput.min.js"></script>
+<script src="lib/jquery.scrollTo.min.js"></script>
+<script src="lib/jquery.magnify.js"></script>
+<script src="lib/jquery.easing.1.3.js"></script>
+<script src="lib/dragula/dragula.min.js"></script>
+<script src="lib/videoBG/videoBG.js"></script>
+<!--Load scripts-->
+<script src="lib/calctable.min.js"></script>
+
+<!-- You can find global settings here -->
+<script src="js/globals.js"></script>
+<script src="js/util-functions.js"></script>
+
+<script src="js/inits/init-settings.js"></script>
+<script src="js/inits/init-checkBrowser.js"></script>
+<script src="js/inits/init-video.js"></script>
+<script src="js/inits/init-youtube.js"></script>
+<script src="js/inits/init-bigSlider.js"></script>
+<script src="js/inits/init-clientSlider.js"></script>
+<script src="js/inits/init-affix.js"></script>
+<script src="js/inits/init-mainMenu.js"></script>
+<script src="js/inits/init-categories.js"></script>
+<script src="js/inits/init-phoneMasking.js"></script>
+<script src="js/inits/init-validation.js"></script>
+<script src="js/inits/init-promos.js"></script>
+<script src="js/inits/init-numberAnimation.js"></script>
+<script src="js/inits/init-numberInputs.js"></script>
+<script src="js/inits/init-cart.js"></script>
+<script src="js/inits/init-modalDetailed.js"></script>
+
+<script src="js/entry.js"></script>
+<script>
+	var baseUrl = '';
+	// if (typeof SITE_TEMPLATE_PATH !== "undefined") baseUrl = SITE_TEMPLATE_PATH + "/" + baseUrl;
+	$(function(){
+		ls.init.phoneMasking(document);
+		// $('.form-tel').intlTelInput("loadUtils", baseUrl + '/lib/intlTelInput/utils.js');
+	})
+</script>
+
+		
+
+
+<div class="overlay overlay-simplegenie" id="modal_detailed" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
+	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
+	<div class="modal-content detail-popup">
+		<!-- content added dynamically -->
+	</div>
+</div>
+<div class="overlay overlay-simplegenie" id="modal_cart" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
+	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
+	<div class="modal-content detail-popup" id="cartView-popup">
+		<button type="button" class="overlay-close inner visible-xs" data-dismiss="modal">×</button>
+<form action="index.html">
+    <div class="b-title text-center c-white">Your Cart</div>
+    <div class="wrap-cart-window clearfix">
+        <div class="cart-items">
+            <div class="visible-xs ci-thead-mob ci-info"><span class="ct2">Items:</span>&nbsp;<span class="ci-length">3</span> <span class="ct2 pl20">Total:</span>&nbsp;<strong>$</strong><span class="ci-sum-final">$1336</span>
+            </div>
+            <table class="table">
+                <thead class="ci-head hidden-xs">
+                    <tr>
+                        <th class="ci-info pl25" colspan="2"><span class="ct2">Items:</span>&nbsp;<span class="ci-length">3</span> <span class="ct2 pl20">Total:</span>&nbsp;<strong>$</strong><span class="ci-sum-final">$1336</span>
+                        </th>
+                        <th class="text-center">Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th class="text-center">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr class="ci-item">
+                            <td class="col-sm-1 col-md-1 col-xs-2">
+                                <div class="media">
+                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart1.jpg" alt=""></a>
+                                </div>
+                            </td>
+                            <td class="ci-text hidden-xs col-sm-4 col-md-3">
+                                Pigeons's milk Creme brulee cake
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
+                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Pigeons's milk</a>
+                                <div class="ib input-group counter-badge">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
+                                    </div>
+                                    <input type="text" class="form-control input-number ci-count" value="1" data-min="1" data-max="100">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$19</strong>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">19</strong>
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
+                                <div class="ci-num visible-xs"><strong>$19</strong>
+                                </div>
+                                <a href="" class="btn-remove"></a>
+                            </td>
+                        </tr>
+                        <tr class="ci-item">
+                            <td class="col-sm-1 col-md-1 col-xs-2">
+                                <div class="media">
+                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart2.jpg" alt=""> </a>
+                                </div>
+                            </td>
+                            <td class="ci-text hidden-xs col-sm-4 col-md-3 text-center">
+                                Chocolate muffins with cream filling
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
+                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Chocolate muffins with cream filling</a>
+                                <div class="ib input-group counter-badge">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
+                                    </div>
+                                    <input type="text" class="form-control input-number ci-count" value="10" data-min="1" data-max="100">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$1</strong>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">10</strong>
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
+                                <div class="ci-num visible-xs"><strong>10</strong>
+                                </div>
+                                <a href="" class="btn-remove"></a>
+                            </td>
+                        </tr>
+                        <tr class="ci-item">
+                            <td class="col-sm-1 col-md-1 col-xs-2">
+                                <div class="media">
+                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart3.jpg" alt=""> </a>
+                                </div>
+                            </td>
+                            <td class="ci-text hidden-xs col-sm-4 col-md-3 text-center">
+                                Cinnamon and nuts buns
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
+                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Cinnamon and nuts buns</a>
+                                <div class="ib input-group counter-badge">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
+                                    </div>
+                                    <input type="text" class="form-control input-number ci-count" value="12" data-min="1" data-max="100">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$0.8</strong>
+                            </td>
+                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">$9.6</strong>
+                            </td>
+                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
+                                <div class="ci-num visible-xs"><strong>$9.6</strong>
+                                </div>
+                                <a href="" class="btn-remove"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <div class="ci-bottom text-left clearfix">
+
+                    <div class="ci-sum-all">
+                        <div class="name">Total:</div>
+                        <div class="dtab">
+                            <div class="media-left pr10">
+                                <div class="line">Amount:</div>
+                                <div class="line">Your discount:</div>
+                                <div class="line">Total:</div>
+                            </div>
+                            <div class="media-left">
+                                <div class="line"><strong class="ci-length">3</strong>
+                                </div>
+                                <div class="line"><strong class="ci-sum-promo">$4.5</strong>
+                                </div>
+                                <div class="line"><strong>$</strong><strong class="ci-sum-final">$34.1</strong>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ci-promo form-group">
+                        <div class="dtab">
+                            <div class="media-left media-middle">
+                                <div class="name mr30">Do you know promotion
+                                    <br>discount code?</div>
+                            </div>
+                            <div class="media-left media-middle">
+                                <div class="input-group input-with-btn">
+                                    <input type="text" class="form-control input-sm" placeholder="Redeem code">
+                                    <button type="button" class="btn btn-send btn-h2"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="form-req mt35">
+                <div class="form-group">
+                    <label for="f01">Name<span class="c-req">*</span>:</label>
+                    <input type="text" class="form-control" id="f01" data-min="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="f03">Phone number<span class="c-req">*</span>:</label>
+                    <input type="text" class="form-control form-tel" id="f03" data-notice="Invalid mobile phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="f02">E-mail:</label>
+                    <input type="email" class="form-control" id="f02">
+                </div>
+                <div class="form-group">
+                    <label for="f04">Shipping address<span class="c-req">*</span>:</label>
+                    <textarea class="" id="f04" required></textarea>
+                </div>
+                <div class="description">Fields marked with asterisk(<span class="c-req">*</span>) are required</div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-icon btn-clicked btn--sendord flaticon-delivery55 mt45">Submit order</button>
+                </div>
+            </div>
+    </div>
+</form>
+	</div>
+</div>
+<div class="overlay overlay-simplegenie" id="modal_settings" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
+	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
+	<div class="modal-content detail-popup">
+		<form action="#">
+    <div class="b-title text-center">Settings</div>
+    <div class="form-settings">
+        <div class="form-block">
+            <div class="row mb45">
+                <div class="title">Main settings</div>
+                <div class="dtab">
+                    <!-- <div class="media-left pr40" style="width: 300px;">
+                        <div class="form-group">
+                            <div class="form-title mb10"><strong>Customize background:</strong>
+                            </div>
+                            <div class="name">Choose color:</div>
+                            <input type="text" class="form-control inp-colorpicker input-sm" value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <div class="name">Choose file:</div>
+                            <div class="nav-bg mb10">
+                                <a href=""><img src="img/blank-st-bg1.jpg" alt="">
+                                </a>
+                                <a href=""><img src="img/blank-st-bg2.jpg" alt="">
+                                </a>
+                                <a href=""><img src="img/blank-st-bg3.jpg" alt="">
+                                </a>
+                            </div>
+                            <input type="file" class="filestyle" data-icon="false" data-buttonText="Browse" data-size="sm" data-buttonBefore="true">
+                        </div>
+                    </div> -->
+                    <div class="media-left">
+                        <div class="form-group ">
+                            <div class="form-title mb10"><strong>Color scheme:</strong>
+                            </div>
+                            <div class="ib vat mr20">
+                                <div class="name">Choose scheme:</div>
+                                <div class="nav-mini nav-themes">
+                                    <a href="#common" style="background-color: #E74C3C;"></a>
+                                    <a href="#bgray_teal" style="background-color: #1BA39C;"></a>
+                                    <a href="#blue_orange" style="background-color: #EB9532;"></a>
+                                    <a href="#dark_blue_yellow" style="background-color: #9A12B3;"></a>
+                                    <a href="#red_green" style="background-color: #F4D03F;"></a>
+                                </div>
+                            </div>
+                            <!-- <div class="ib vat">
+                                <div class="name">or choose custom color:</div>
+                                <input type="text" class="form-control inp-colorpicker input-sm" value="#ffffff">
+                            </div> -->
+                        </div>
+                        <!-- <div class="form-group">
+                            <div class="name">or apply texture:</div>
+                            <div class="nav-mini mb40">
+                                <a href=""><img src="img/blank-texture1.jpg" alt="">
+                                </a>
+                                <a href=""><img src="img/blank-texture2.jpg" alt="">
+                                </a>
+                                <a href=""><img src="img/blank-texture3.jpg" alt="">
+                                </a>
+                                <a href=""><img src="img/blank-texture4.jpg" alt="">
+                                </a>
+                            </div>
+                            <input type="file" class="filestyle" data-icon="false" data-buttonText="Browse" data-size="sm" data-buttonBefore="true">
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="two-column">
+                    <div class="col ib pr100">
+                        <div class="title">Customize blocks</div>
+                        <div class="form-group sett-width">
+                            <div class="form-title">Blocks width:</div>
+                            <div class="radio ib mr45">
+                                <input type="radio" name="rad1" id="rb1" value="default" checked>
+                                <label for="rb1">Full-page width</label>
+                            </div>
+                            <div class="radio ib">
+                                <input type="radio" name="rad1" id="rb2" value="cut">
+                                <label for="rb2">Fixed</label>
+                            </div>
+                            <p class="mt15"><i>You can remove unnecessary blocks or rearrange them. To do this, pull the block and drag the mouse to the desired location</i>
+                            </p>
+                        </div>
+                        <div class="drag-sections mb50">
+                            <div class="d-section d-dis">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch1" disabled checked>
+                                <label for="s-ch1"></label>
+                                <div class="d-name">Menu</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch2" checked>
+                                <label for="s-ch2"></label>
+                                <div class="d-name bg1">Banner</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch3" checked>
+                                <label for="s-ch3"></label>
+                                <div class="d-name">Goods</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch4" checked>
+                                <label for="s-ch4"></label>
+                                <div class="d-name bg-back">Promotions</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch5" checked>
+                                <label for="s-ch5"></label>
+                                <div class="d-name">Why us?</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch6" checked>
+                                <label for="s-ch6"></label>
+                                <div class="d-name bg2">Video</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch7" checked>
+                                <label for="s-ch7"></label>
+                                <div class="d-name">How it works?</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch8" checked>
+                                <label for="s-ch8"></label>
+                                <div class="d-name bg1">Company in figures</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch9" checked>
+                                <label for="s-ch9"></label>
+                                <div class="d-name bg-back">Shipping and payment</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch10" checked>
+                                <label for="s-ch10"></label>
+                                <div class="d-name bg2">Reviews</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch11" checked>
+                                <label for="s-ch11"></label>
+                                <div class="d-name">Contacts</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch12" checked>
+                                <label for="s-ch12"></label>
+                                <div class="d-name bg-map">Map</div>
+                            </div>
+                            <div class="d-section">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch13" checked>
+                                <label for="s-ch13"></label>
+                                <div class="d-name">Feedback</div>
+                            </div>
+                            <div class="d-section d-dis">
+                                <div class="d-handle"></div>
+                                <input type="checkbox" id="s-ch14" disabled checked>
+                                <label for="s-ch14"></label>
+                                <div class="d-name bg-back">Footer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ib pl50">
+                        <div class="title">Customize animation</div>
+                        <div class="form-group">
+                            <div class="form-title">Cart view:</div>
+                            <div class="radio ib mr45">
+                                <input type="radio" name="cart-view" id="rb3" value="page">
+                                <label for="rb3">On the page (slide up)</label>
+                            </div>
+                            <div class="radio ib">
+                                <input type="radio" name="cart-view" id="rb4" value="popup" checked>
+                                <label for="rb4">Popup (modal) window</label>
+                            </div>
+                        </div>
+                        <div class="form-group gpt-sett hidden">
+                            <div class="form-title">Goods pop-up window:</div>
+                            <div class="radio ib mr45">
+                                <input type="radio" name="rad3" id="rb5" value="ON" checked>
+                                <label for="rb5">ON</label>
+                            </div>
+                            <div class="radio ib">
+                                <input type="radio" name="rad3" id="rb6" value="OFF">
+                                <label for="rb6">OFF</label>
+                            </div>
+                        </div>
+                        <div class="form-group hidden">
+                            <div class="form-title">Items view:</div>
+                            <div class="radio ib mr45">
+                                <input type="radio" name="rad4" id="rb7">
+                                <label for="rb7">Slider</label>
+                            </div>
+                            <div class="radio ib">
+                                <input type="radio" name="rad4" id="rb8" checked>
+                                <label for="rb8">Ajax-loading</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-title">Slider animation effect:</div>
+                            <select class="selectpicker fx-sl">
+                                <option value="fxSoftScale">Soft scale</option>
+                                <option value="fxPressAway">Press away</option>
+                                <option value="fxSideSwing">Side Swing</option>
+                                <option value="fxFortuneWheel">Fortune wheel</option>
+                                <option value="fxSwipe">Swipe</option>
+                                <option value="fxPushReveal">Push reveal</option>
+                                <option value="fxSnapIn">Snap in</option>
+                                <option value="fxLetMeIn">Let me in</option>
+                                <option value="fxStickIt">Stick it</option>
+                                <option value="fxArchiveMe">Archive me</option>
+                                <option value="fxVGrowth">Vertical growth</option>
+                                <option value="fxSlideBehind">Slide Behind</option>
+                                <option value="fxSoftPulse">Soft Pulse</option>
+                                <option value="fxEarthquake">Earthquake</option>
+                                <option value="fxCliffDiving">Cliff diving</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-title">Reviews animation:</div>
+                            <select class="selectpicker fx-cl">
+                                <option value="default">default</option>
+                                <option value="tooltip-sharp">sharp</option>
+                                <option value="tooltip-round-1">round-1</option>
+                                <option value="tooltip-round-2">round-2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-title">Promotions block effects:</div>
+                            <select class="selectpicker fx-disc">
+                                <option value="fadeInDown">fadeInDown</option>
+                                <option value="flipInX">flipInX</option>
+                                <option value="bounceInDown">bounceInDown</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-title">Pop-up windows animation:</div>
+                            <select class="selectpicker fx-modal">
+                                <option value="overlay-corner">corner</option>
+                                <option value="overlay-door">door</option>
+                                <option value="overlay-hugeinc">hugeinc</option>
+                                <option value="overlay-slidedown">slidedown</option>
+                                <option value="overlay-scale">scale</option>
+                                <option value="overlay-contentpush" selected>contentpush</option>
+                                <option value="overlay-simplegenie">simplegenie</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-title">Goods appearance animation:</div>
+                            <select class="selectpicker fx-item">
+                                <option value="fadeInDown">fadeInDown</option>
+                                <option value="zoomIn">zoomIn</option>
+                                <option value="zoomInRight">zoomInRight</option>
+                                <option value="slideInLeft">slideInRight</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center mb25">
+                    <div class="checkbox ib">
+                        <input type="checkbox" name="check" id="chck1">
+                        <label for="chck1">Save as default</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="ib">
+                        <a href="" class="reset-btn mr25"><span>Reset settings</span></a>
+                        <button type="submit" class="btn btn-clicked btn--moema">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+	</div>
+</div>
+	</div><!-- .landing-wrap -->
+</body>
+</html>
