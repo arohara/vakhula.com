@@ -17,6 +17,25 @@
 	<link type="text/css" rel="stylesheet" href="fonts/shipping-font/styles.css">
 	<link rel="stylesheet" href="styles/css/styles.css">
 	<link rel="stylesheet" href="styles/css/theme-common.css" id="theme">
+	
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 	<!--[if (gte IE 6)&(lte IE 8)]>
 		<script type="text/javascript" src="lib/selectivizr-min.js"></script>
@@ -61,11 +80,137 @@
   box-shadow: inset 400px 50px 0 0 orange;
 }
 
-#outer {
-  width: 364px;
-  margin: 50px auto 0 auto;
-  text-align: center;
+.product {
+    padding: 10px;
+    background-color: #fff;
+    position: relative
 }
+
+.about h4 {
+    margin-bottom: -3px
+}
+
+.about h3 {
+    color: #e3ce57
+}
+
+.about span {
+    font-size: 13px
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #e3ce57;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    right: 10%;
+    z-index: 10;
+    bottom: -5%
+}
+
+.inner-dot {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer
+}
+        .carousel-wrapper{
+  height:400px;
+  position:relative;
+  width:800px;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+  background-size:cover;
+  }
+.item-2{
+  background:url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+   background-size:cover;
+}
+.item-3{
+  background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+
+
     </style>
 </head>
 
@@ -98,26 +243,23 @@
 				<ul class="nav navbar-nav main-nav">
 					<li><a href="#main-slider" data-dismiss="modal">Home</a>
 					</li>
-					<li><a href="#s-list" data-dismiss="modal">Catalog</a>
+					
+					<li><a href="#catalog" data-dismiss="modal">Catalog</a>
 					</li>
-					<li><a href="#s-discounts" data-dismiss="modal">Discounts</a>
-					</li>
-					<li><a href="#s-why" data-dismiss="modal">Why Us?</a>
+					<li><a href="#s-why" data-dismiss="modal">Why Choose Us</a>
 					</li>
 					<!-- <li><a href="#s-video" data-dismiss="modal">Video about us</a>
 					</li> -->
-					<li><a href="#s-how-work" data-dismiss="modal">How it works</a>
+					<li><a href="#s-how-work" data-dismiss="modal">How to order</a>
 					</li>
-					<li><a href="#s-shopnum" data-dismiss="modal">The Store in Figures</a>
+					<li><a href="#s-shopnum" data-dismiss="modal">Our Succesful Story</a>
 					</li>
 					<li><a href="#s-deliv" data-dismiss="modal">Shipping</a>
 					</li>
-					<li><a href="#s-clients" data-dismiss="modal">Reviews</a>
+					
+					<li><a href="#s-address" data-dismiss="modal">Contact Us</a>
 					</li>
-					<li><a href="#s-address" data-dismiss="modal">Contacts</a>
-					</li>
-					<li><a href="#s-contacts" data-dismiss="modal">Feedback</a>
-					</li>
+					
 				</ul>
 				<a href="#" class="arr-nav prev disabled">&#9679; &#9679; &#9679;</a>
 				<a href="#" class="arr-nav next">&#9679; &#9679; &#9679;</a>
@@ -177,30 +319,34 @@
             <div class="swiper-slide">
             	<div class="slider-text">
             		<div class="slider-title">
-            			Divine Baking Foods for your everyday needs
+            			A taste of heaven, Blessed by Divine mother Vakhula.
             		</div>
             		<div class="slider-description">
-            			<span class="hidden-xs">We become what we consume. Every foods made here are with purity, right ingrediants just the way as served to god.</span>
+            			<span class="hidden-xs">Foods prepared at our factory are made for everyone, especially the cute Krishnas at home. We produce foods with the same love and care praying Divine Mother Vakhula.</span>
             		</div>
             	</div>
             </div>
             <div class="swiper-slide">
 	            <div class="slider-text">
 	            	<div class="slider-title">
-		            	We discover something new every day
+	            	Fresh, Safe and Hygeine Foods.
+		          
 	            	</div>
 	            	<div class="slider-description">
-	            		Lorem ipsum dolor sit amet<span class="hidden-xs">, consectetur adipisicing elit. Maxime incidunt dolor expedita inventore iusto animi placeat rerum quod modi explicabo, enim voluptatibus ratione cumque! Inventore.
+	            		Our factory takes all measures to make use of fresh ingredients alone and runs regular health checkups for our workers.
+
 	            	</div>
             	</div>
             </div>
+            
+            
             <div class="swiper-slide">
 	            <div class="slider-text">
 	            	<div class="slider-title">
-			            Lorem ipsum dolor<span class="hidden-xs"> sit amet, consectetur</span>
+			           Friendly Support and On time Delivery.
 	            	</div>
 	            	<div class="slider-description">
-	            		Lorem ipsum dolor sit amet<span class="hidden-xs">, consectetur adipisicing elit. Maxime incidunt dolor expedita inventore iusto animi placeat rerum quod modi explicabo, enim voluptatibus ratione cumque! Inventore.
+	            		Ever wanted to order on an urgent basis? We got your back. We provide the best service around the city with quick delivery of our products soon as you confirm the order with us.
 	            	</div>
             	</div>
             </div>
@@ -208,207 +354,98 @@
         <div class="swiper-button-prev flaticon-chevron14 hidden-xs"></div>
 		<div class="swiper-button-next flaticon-chevron15 hidden-xs"></div>
     </div>
+        
 </section>
 
-				<section>
-				    <div style="min-height: 500px; padding-top: 30px;" class="container">
-				        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                       <img src="catalog/swbread.png" class="stable full-w" alt="">
-                       <h4 style=" margin-top: 18px; color: white;">S/W BREAD
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">400 gms
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">4 days
-
-</p>
-                        </div>
-				         <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
-                        <div style="height: 100px;">
-                       <img style=" max-width: 100%;
-    height: auto;;" src="catalog/multigrain.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">WHOLE WHEAT MULTIGRAIN
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">400GMS
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/pizzabase.png"  alt="">
-                       <h4 style=" margin-top: 18px; color: white;">PIZZA BASE  8*2
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">4 days
-
-</p>
-                        </div>
-                        
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/pavbun.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">PAV BUN 40GM*4
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/chocolava.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">Chocolate Lava
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">160GMS
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/Burgerbun.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">BURGER BUN(PACK OF 9)
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">75GM
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/vmuff.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">VANILA MUFFINS
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">40Gms
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/cbun.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">Cream Bun
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">40Gms
-
-</p>
-                      <img src="catalog/expiry.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">3 days
-
-</p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #b6e877; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/vegpuff.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">Veg Puff
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
-
-
-
-</p>
-                      
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/eggpuff.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">Egg Puff
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
-
-
-
-</p>
-                      
-                        </div>
-                        
-                        <div class="col-md-2 col-sm-2 col-xs-6" style="background: #89c341; padding: 30px; height: 300px;">
-                        <div style="height: 150px;">
-                       <img style=" max-width: 100%;
-    height: auto;" src="catalog/eggpuff.png"  alt=""></div>
-                       <h4 style=" margin-top: 18px; color: white;">Egg Puff
-
-
-</h4>
-                      <img src="catalog/weight.svg" style="width: 16px; float: left; " alt=""> <p style="padding-left: 20px; color: white;">70 gms
-
-
-
-</p>
-                      
-                        </div>
-                        
-                        <div id="outer">
-  <div class="button_slide slide_down">View More</div>
-                        </div>
-                        
-                        
-                        
-				    </div>
-				    
-				</section>
 				
+				<section id="catalog">
+				    
+				    <div class="container">
+                   <div class="container mt-5">
+    <div class="row d-flex justify-content-center g-1">
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/swbread.jpg" width="250">
+                <div class="about text-left px-3">
+                   <h3>S/W Bread</h3>
+                    <h4>400gms</h4> <span class="text-muted">4 days</span>
+                    
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/swbrown.jpg" width="250">
+                <div class="about text-left px-3">
+                   <h3>S/W Brown Bread</h3>
+                    <h4>400gms</h4> <span class="text-muted">4 days</span>
+                    
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/multigrain.jpg" width="250">
+                <div class="about text-left px-3">
+                    <h3>WHOLE WHEAT MULTIGRAIN</h3>
+                    <h4>400gms</h4> <span class="text-muted">4 days</span>
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/veg_puff.jpg" width="250">
+                <div class="about text-left px-3">
+                    <h3>VEG PUFF</h3>
+                    <h4>400gms</h4> <span class="text-muted">4 days</span>
+                </div> 
+            </div>
+        </div>
+            <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/samosa.jpg" width="250">
+                <div class="about text-left px-3">
+                    <h3>SAMOSA</h3>
+                    <h4>70 gm</h4>
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="catalog/creamebun.jpg" width="250">
+                <div class="about text-left px-3">
+                    <h3>Creame Bun</h3>
+                    <h4>70 gm</h4> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+                   
+            <div class="col-md-12 col-sm-12 center-col text-center"> <a href="catalog.html" class="light-button btn btn-large button xs-margin-bottom-five">Check Full Catalog</a>  </div>
+        
+                    </div>
+				</section>
 				
 				<!-- Why us? -->
 				<section id="s-why" class="s-why">
 	<div class="container">
 		<h2 class="b-title ct1 text-center">Why choose Vakhula?</h2>
 		<div class="row">
-			<div class="justify row-just">
-				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.2s">
-					<img src="img/why1.png" alt="">
-					<div class="desc">
-						<div class="name">Delicious and Quality</div>
-						<div class="text">We produce extensive range of baking products that are made with top quality ingredients and right baking practices giving you a delicious taste that customers get fond of.</div>
-					</div>
-				</div>
-				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.4s">
-					<img src="img/why2.png" alt="">
-					<div class="desc">
-						<div class="name">Professional staffs</div>
-						<div class="text">We follow strict baking procedure for staffs to maintain cleanliness and regular health checkups to give our customers hygienic food.</div>
-					</div>
-				</div>
-				<div class="why-item zoomIn animated wow" data-wow-duration="0.7s" data-wow-delay="0.6s">
-					<img src="img/why3.png" alt="">
-					<div class="desc">
-						<div class="name">Pricing</div>
-						<div class="text">Comparing to our competitors we provide far more better pricing for the quality of foods we provide making it best food and better profits for you in a longer run.</div>
-					</div>
-				</div>
-			</div>
+			<div class="container">
+           <div class="col-md-6 col-sm-6">
+		       <img src="img/factoryimage.jpg" width="100%" />
+
+                </div>
+            <div class="col-md-6 col-sm-6">
+            
+		       <h3> Vakhula Food Factory </h3>
+ 
+<h4>Chennai’s newest, divine and most delicious wholesale baking Products.</h4>
+ 
+                <p>The Backing Factory is a vision that came to life once we noticed a big gap in the market for quality baked foods. In a fast running world people’s lifestyle has become eating out but much of these foods are made with less quality. That’s where Vakhula comes in. Our baking products are made fresh with high-grade ingredients and blessed by divine mother Vakhula. </p>
+ 
+ <h3>Divine foods</h3>
+ 
+                <p>With Divinity comes devotion and purity to serve. We tell our employees that each food we make is made for lord Krishna just like how mother Vakhula makes food for her son. Every child of this country is lord Krishna to us and we make sure that every food we make is divine, delicious and healthy.</p>
+
+                </div>
+		        
+		    </div>
 			
 		</div>
 	</div>
@@ -417,12 +454,12 @@
 				<!-- Video -->
 				
 				
-				<!-- How it Works -->
+				<!-- How to Order -->
 				<section id="s-how-work" class="s-how-work">
 	<div class="container">
 		<div class="row text-center">
-			<h2 class="b-title ct1">How it works?</h2>
-			<div class="sub-title ct1">Everything is very simple!</div>
+			<h2 class="b-title ct1">How to Order?</h2>
+			<div class="sub-title ct1">Just simple!</div>
 		</div>
 		
 		<div class="row steps4">
@@ -433,7 +470,7 @@
 					</div>
 				</div>
 				<div class="title">
-					1. Choose The products from our catalog.
+					 Choose The products from our catalog.
 				</div>
 				
 			</div>
@@ -445,7 +482,7 @@
 					</div>
 				</div>
 				<div class="title">
-					2. WhatsApp us the products you want.
+					Make a list and send us through email or whatsapp
 				</div>
 				
 			</div>
@@ -457,7 +494,7 @@
 					</div>
 				</div>
 				<div class="title">
-					Confirm the Order.
+					We will Confirm the Order.
 				</div>
 
 			</div>
@@ -469,7 +506,7 @@
 					</div>
 				</div>
 				<div class="title">
-					Receive your foods.
+					Receive your Order.
 				</div>
 				
 			</div>
@@ -554,18 +591,18 @@
 </section>
 				
 				<!-- The Store in Figures -->
-				<section id="s-shopnum" class="s-shopnum bg2 para-block" style="background: url('img/shop-numbers-bg.jpg') center / cover no-repeat;">
-	<img class="s-parallax" src="img/shop-numbers-bg.jpg" alt="" data-parallax='{"y" : -230}'>
+				<section id="s-shopnum" class="s-shopnum bg2 para-block" style="background: url('img/vakhulaslider.jpg') center / cover no-repeat;">
+	<img class="s-parallax" src="img/vakhulaslider.jpg" alt="" data-parallax='{"y" : -230}'>
 	<div class="container">
 		<div class="row">
-			<h2 class="b-title c-white text-center">The store in figures</h2>
+			<h2 class="b-title c-white text-center">Our Succesful Story</h2>
 			<div class="snum-items justify">
 				<div class="snum-item">
 					<div class="dtab">
 						<i class="snum-icon media-left flaticon-cooker4"></i>
 						<div class="media-left pl10">
-							<div class="num num-animate hidden-xs" data-finish="1185">0</div>
-							<div class="num num-animate hidden-big" data-finish="1185">1185</div>
+							<div class="num num-animate hidden-xs" data-finish="665">0</div>
+							<div class="num num-animate hidden-big" data-finish="665">665</div>
 							<div class="snum-label">work days</div>
 						</div>
 					</div>
@@ -574,8 +611,8 @@
 					<div class="dtab">
 						<i class="snum-icon media-left flaticon-cake14"></i>
 						<div class="media-left pl10">
-							<div class="num num-animate hidden-xs" data-finish="9845">0</div>
-							<div class="num num-animate hidden-big" data-finish="9845">9845</div>
+							<div class="num num-animate hidden-xs" data-finish="9998">0</div>
+							<div class="num num-animate hidden-big" data-finish="9998">9998</div>
 							<div class="snum-label">desserts</div>
 						</div>
 					</div>
@@ -584,22 +621,13 @@
 					<div class="dtab">
 						<i class="snum-icon media-left flaticon-commercial15"></i>
 						<div class="media-left pl10">
-							<div class="num num-animate hidden-xs" data-finish="8305">0</div>
-							<div class="num num-animate hidden-big" data-finish="8305">8305</div>
-							<div class="snum-label">orders</div>
+							<div class="num num-animate hidden-xs" data-finish="830">0</div>
+							<div class="num num-animate hidden-big" data-finish="830">830</div>
+							<div class="snum-label">successful orders</div>
 						</div>
 					</div>
 				</div>
-				<div class="snum-item">
-					<div class="dtab">
-						<i class="snum-icon media-left flaticon-multiple25"></i>
-						<div class="media-left pl10">
-							<div class="num num-animate hidden-xs" data-finish="2502">0</div>
-							<div class="num num-animate hidden-big" data-finish="2502">2502</div>
-							<div class="snum-label">Subscribers</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -808,477 +836,6 @@
 		
 
 
-<div class="overlay overlay-simplegenie" id="modal_detailed" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
-	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
-	<div class="modal-content detail-popup">
-		<!-- content added dynamically -->
-	</div>
-</div>
-<div class="overlay overlay-simplegenie" id="modal_cart" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
-	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
-	<div class="modal-content detail-popup" id="cartView-popup">
-		<button type="button" class="overlay-close inner visible-xs" data-dismiss="modal">×</button>
-<form action="index.html">
-    <div class="b-title text-center c-white">Your Cart</div>
-    <div class="wrap-cart-window clearfix">
-        <div class="cart-items">
-            <div class="visible-xs ci-thead-mob ci-info"><span class="ct2">Items:</span>&nbsp;<span class="ci-length">3</span> <span class="ct2 pl20">Total:</span>&nbsp;<strong>$</strong><span class="ci-sum-final">$1336</span>
-            </div>
-            <table class="table">
-                <thead class="ci-head hidden-xs">
-                    <tr>
-                        <th class="ci-info pl25" colspan="2"><span class="ct2">Items:</span>&nbsp;<span class="ci-length">3</span> <span class="ct2 pl20">Total:</span>&nbsp;<strong>$</strong><span class="ci-sum-final">$1336</span>
-                        </th>
-                        <th class="text-center">Quantity</th>
-                        <th class="text-center">Price</th>
-                        <th class="text-center">Total</th>
-                        <th class="text-center">Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr class="ci-item">
-                            <td class="col-sm-1 col-md-1 col-xs-2">
-                                <div class="media">
-                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart1.jpg" alt=""></a>
-                                </div>
-                            </td>
-                            <td class="ci-text hidden-xs col-sm-4 col-md-3">
-                                Pigeons's milk Creme brulee cake
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
-                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Pigeons's milk</a>
-                                <div class="ib input-group counter-badge">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
-                                    </div>
-                                    <input type="text" class="form-control input-number ci-count" value="1" data-min="1" data-max="100">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$19</strong>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">19</strong>
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
-                                <div class="ci-num visible-xs"><strong>$19</strong>
-                                </div>
-                                <a href="" class="btn-remove"></a>
-                            </td>
-                        </tr>
-                        <tr class="ci-item">
-                            <td class="col-sm-1 col-md-1 col-xs-2">
-                                <div class="media">
-                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart2.jpg" alt=""> </a>
-                                </div>
-                            </td>
-                            <td class="ci-text hidden-xs col-sm-4 col-md-3 text-center">
-                                Chocolate muffins with cream filling
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
-                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Chocolate muffins with cream filling</a>
-                                <div class="ib input-group counter-badge">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
-                                    </div>
-                                    <input type="text" class="form-control input-number ci-count" value="10" data-min="1" data-max="100">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$1</strong>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">10</strong>
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
-                                <div class="ci-num visible-xs"><strong>10</strong>
-                                </div>
-                                <a href="" class="btn-remove"></a>
-                            </td>
-                        </tr>
-                        <tr class="ci-item">
-                            <td class="col-sm-1 col-md-1 col-xs-2">
-                                <div class="media">
-                                    <a class="link-item" href="item-detail.html" data-toggle="modal" data-target="#modal_detailed" data-remote="false"> <img class="media-object" src="img/blank-item-cart3.jpg" alt=""> </a>
-                                </div>
-                            </td>
-                            <td class="ci-text hidden-xs col-sm-4 col-md-3 text-center">
-                                Cinnamon and nuts buns
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-7 text-center">
-                                <a href="item-detail.html" class="ci-text link-item visible-xs" data-toggle="modal" data-target="#modal_detailed" data-remote="false">Cinnamon and nuts buns</a>
-                                <div class="ib input-group counter-badge">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-minus">-</button>
-                                    </div>
-                                    <input type="text" class="form-control input-number ci-count" value="12" data-min="1" data-max="100">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-v2 btn-v2-h2 btn-number btn-plus">+</button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong class="ci-sum-single">$0.8</strong>
-                            </td>
-                            <td class="ci-num hidden-xs col-sm-1 col-md-2 text-center"><strong>$</strong><strong class="ci-sum-item">$9.6</strong>
-                            </td>
-                            <td class="col-sm-1 col-md-2 col-xs-3 text-center">
-                                <div class="ci-num visible-xs"><strong>$9.6</strong>
-                                </div>
-                                <a href="" class="btn-remove"></a>
-                            </td>
-                        </tr>
-                    </tbody>
-            </table>
 
-            <div class="ci-bottom text-left clearfix">
-
-                    <div class="ci-sum-all">
-                        <div class="name">Total:</div>
-                        <div class="dtab">
-                            <div class="media-left pr10">
-                                <div class="line">Amount:</div>
-                                <div class="line">Your discount:</div>
-                                <div class="line">Total:</div>
-                            </div>
-                            <div class="media-left">
-                                <div class="line"><strong class="ci-length">3</strong>
-                                </div>
-                                <div class="line"><strong class="ci-sum-promo">$4.5</strong>
-                                </div>
-                                <div class="line"><strong>$</strong><strong class="ci-sum-final">$34.1</strong>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ci-promo form-group">
-                        <div class="dtab">
-                            <div class="media-left media-middle">
-                                <div class="name mr30">Do you know promotion
-                                    <br>discount code?</div>
-                            </div>
-                            <div class="media-left media-middle">
-                                <div class="input-group input-with-btn">
-                                    <input type="text" class="form-control input-sm" placeholder="Redeem code">
-                                    <button type="button" class="btn btn-send btn-h2"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="form-req mt35">
-                <div class="form-group">
-                    <label for="f01">Name<span class="c-req">*</span>:</label>
-                    <input type="text" class="form-control" id="f01" data-min="2" required>
-                </div>
-                <div class="form-group">
-                    <label for="f03">Phone number<span class="c-req">*</span>:</label>
-                    <input type="text" class="form-control form-tel" id="f03" data-notice="Invalid mobile phone number" required>
-                </div>
-                <div class="form-group">
-                    <label for="f02">E-mail:</label>
-                    <input type="email" class="form-control" id="f02">
-                </div>
-                <div class="form-group">
-                    <label for="f04">Shipping address<span class="c-req">*</span>:</label>
-                    <textarea class="" id="f04" required></textarea>
-                </div>
-                <div class="description">Fields marked with asterisk(<span class="c-req">*</span>) are required</div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-icon btn-clicked btn--sendord flaticon-delivery55 mt45">Submit order</button>
-                </div>
-            </div>
-    </div>
-</form>
-	</div>
-</div>
-<div class="overlay overlay-simplegenie" id="modal_settings" aria-hidden="true" data-backdrop="true" data-keyboard="true" tabindex="-1">
-	<button type="button" class="overlay-close hidden-xs" data-dismiss="modal">&#215;</button>
-	<div class="modal-content detail-popup">
-		<form action="#">
-    <div class="b-title text-center">Settings</div>
-    <div class="form-settings">
-        <div class="form-block">
-            <div class="row mb45">
-                <div class="title">Main settings</div>
-                <div class="dtab">
-                    <!-- <div class="media-left pr40" style="width: 300px;">
-                        <div class="form-group">
-                            <div class="form-title mb10"><strong>Customize background:</strong>
-                            </div>
-                            <div class="name">Choose color:</div>
-                            <input type="text" class="form-control inp-colorpicker input-sm" value="#ffffff">
-                        </div>
-                        <div class="form-group">
-                            <div class="name">Choose file:</div>
-                            <div class="nav-bg mb10">
-                                <a href=""><img src="img/blank-st-bg1.jpg" alt="">
-                                </a>
-                                <a href=""><img src="img/blank-st-bg2.jpg" alt="">
-                                </a>
-                                <a href=""><img src="img/blank-st-bg3.jpg" alt="">
-                                </a>
-                            </div>
-                            <input type="file" class="filestyle" data-icon="false" data-buttonText="Browse" data-size="sm" data-buttonBefore="true">
-                        </div>
-                    </div> -->
-                    <div class="media-left">
-                        <div class="form-group ">
-                            <div class="form-title mb10"><strong>Color scheme:</strong>
-                            </div>
-                            <div class="ib vat mr20">
-                                <div class="name">Choose scheme:</div>
-                                <div class="nav-mini nav-themes">
-                                    <a href="#common" style="background-color: #E74C3C;"></a>
-                                    <a href="#bgray_teal" style="background-color: #1BA39C;"></a>
-                                    <a href="#blue_orange" style="background-color: #EB9532;"></a>
-                                    <a href="#dark_blue_yellow" style="background-color: #9A12B3;"></a>
-                                    <a href="#red_green" style="background-color: #F4D03F;"></a>
-                                </div>
-                            </div>
-                            <!-- <div class="ib vat">
-                                <div class="name">or choose custom color:</div>
-                                <input type="text" class="form-control inp-colorpicker input-sm" value="#ffffff">
-                            </div> -->
-                        </div>
-                        <!-- <div class="form-group">
-                            <div class="name">or apply texture:</div>
-                            <div class="nav-mini mb40">
-                                <a href=""><img src="img/blank-texture1.jpg" alt="">
-                                </a>
-                                <a href=""><img src="img/blank-texture2.jpg" alt="">
-                                </a>
-                                <a href=""><img src="img/blank-texture3.jpg" alt="">
-                                </a>
-                                <a href=""><img src="img/blank-texture4.jpg" alt="">
-                                </a>
-                            </div>
-                            <input type="file" class="filestyle" data-icon="false" data-buttonText="Browse" data-size="sm" data-buttonBefore="true">
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="two-column">
-                    <div class="col ib pr100">
-                        <div class="title">Customize blocks</div>
-                        <div class="form-group sett-width">
-                            <div class="form-title">Blocks width:</div>
-                            <div class="radio ib mr45">
-                                <input type="radio" name="rad1" id="rb1" value="default" checked>
-                                <label for="rb1">Full-page width</label>
-                            </div>
-                            <div class="radio ib">
-                                <input type="radio" name="rad1" id="rb2" value="cut">
-                                <label for="rb2">Fixed</label>
-                            </div>
-                            <p class="mt15"><i>You can remove unnecessary blocks or rearrange them. To do this, pull the block and drag the mouse to the desired location</i>
-                            </p>
-                        </div>
-                        <div class="drag-sections mb50">
-                            <div class="d-section d-dis">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch1" disabled checked>
-                                <label for="s-ch1"></label>
-                                <div class="d-name">Menu</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch2" checked>
-                                <label for="s-ch2"></label>
-                                <div class="d-name bg1">Banner</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch3" checked>
-                                <label for="s-ch3"></label>
-                                <div class="d-name">Goods</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch4" checked>
-                                <label for="s-ch4"></label>
-                                <div class="d-name bg-back">Promotions</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch5" checked>
-                                <label for="s-ch5"></label>
-                                <div class="d-name">Why us?</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch6" checked>
-                                <label for="s-ch6"></label>
-                                <div class="d-name bg2">Video</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch7" checked>
-                                <label for="s-ch7"></label>
-                                <div class="d-name">How it works?</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch8" checked>
-                                <label for="s-ch8"></label>
-                                <div class="d-name bg1">Company in figures</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch9" checked>
-                                <label for="s-ch9"></label>
-                                <div class="d-name bg-back">Shipping and payment</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch10" checked>
-                                <label for="s-ch10"></label>
-                                <div class="d-name bg2">Reviews</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch11" checked>
-                                <label for="s-ch11"></label>
-                                <div class="d-name">Contacts</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch12" checked>
-                                <label for="s-ch12"></label>
-                                <div class="d-name bg-map">Map</div>
-                            </div>
-                            <div class="d-section">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch13" checked>
-                                <label for="s-ch13"></label>
-                                <div class="d-name">Feedback</div>
-                            </div>
-                            <div class="d-section d-dis">
-                                <div class="d-handle"></div>
-                                <input type="checkbox" id="s-ch14" disabled checked>
-                                <label for="s-ch14"></label>
-                                <div class="d-name bg-back">Footer</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col ib pl50">
-                        <div class="title">Customize animation</div>
-                        <div class="form-group">
-                            <div class="form-title">Cart view:</div>
-                            <div class="radio ib mr45">
-                                <input type="radio" name="cart-view" id="rb3" value="page">
-                                <label for="rb3">On the page (slide up)</label>
-                            </div>
-                            <div class="radio ib">
-                                <input type="radio" name="cart-view" id="rb4" value="popup" checked>
-                                <label for="rb4">Popup (modal) window</label>
-                            </div>
-                        </div>
-                        <div class="form-group gpt-sett hidden">
-                            <div class="form-title">Goods pop-up window:</div>
-                            <div class="radio ib mr45">
-                                <input type="radio" name="rad3" id="rb5" value="ON" checked>
-                                <label for="rb5">ON</label>
-                            </div>
-                            <div class="radio ib">
-                                <input type="radio" name="rad3" id="rb6" value="OFF">
-                                <label for="rb6">OFF</label>
-                            </div>
-                        </div>
-                        <div class="form-group hidden">
-                            <div class="form-title">Items view:</div>
-                            <div class="radio ib mr45">
-                                <input type="radio" name="rad4" id="rb7">
-                                <label for="rb7">Slider</label>
-                            </div>
-                            <div class="radio ib">
-                                <input type="radio" name="rad4" id="rb8" checked>
-                                <label for="rb8">Ajax-loading</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-title">Slider animation effect:</div>
-                            <select class="selectpicker fx-sl">
-                                <option value="fxSoftScale">Soft scale</option>
-                                <option value="fxPressAway">Press away</option>
-                                <option value="fxSideSwing">Side Swing</option>
-                                <option value="fxFortuneWheel">Fortune wheel</option>
-                                <option value="fxSwipe">Swipe</option>
-                                <option value="fxPushReveal">Push reveal</option>
-                                <option value="fxSnapIn">Snap in</option>
-                                <option value="fxLetMeIn">Let me in</option>
-                                <option value="fxStickIt">Stick it</option>
-                                <option value="fxArchiveMe">Archive me</option>
-                                <option value="fxVGrowth">Vertical growth</option>
-                                <option value="fxSlideBehind">Slide Behind</option>
-                                <option value="fxSoftPulse">Soft Pulse</option>
-                                <option value="fxEarthquake">Earthquake</option>
-                                <option value="fxCliffDiving">Cliff diving</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-title">Reviews animation:</div>
-                            <select class="selectpicker fx-cl">
-                                <option value="default">default</option>
-                                <option value="tooltip-sharp">sharp</option>
-                                <option value="tooltip-round-1">round-1</option>
-                                <option value="tooltip-round-2">round-2</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-title">Promotions block effects:</div>
-                            <select class="selectpicker fx-disc">
-                                <option value="fadeInDown">fadeInDown</option>
-                                <option value="flipInX">flipInX</option>
-                                <option value="bounceInDown">bounceInDown</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-title">Pop-up windows animation:</div>
-                            <select class="selectpicker fx-modal">
-                                <option value="overlay-corner">corner</option>
-                                <option value="overlay-door">door</option>
-                                <option value="overlay-hugeinc">hugeinc</option>
-                                <option value="overlay-slidedown">slidedown</option>
-                                <option value="overlay-scale">scale</option>
-                                <option value="overlay-contentpush" selected>contentpush</option>
-                                <option value="overlay-simplegenie">simplegenie</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-title">Goods appearance animation:</div>
-                            <select class="selectpicker fx-item">
-                                <option value="fadeInDown">fadeInDown</option>
-                                <option value="zoomIn">zoomIn</option>
-                                <option value="zoomInRight">zoomInRight</option>
-                                <option value="slideInLeft">slideInRight</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group text-center mb25">
-                    <div class="checkbox ib">
-                        <input type="checkbox" name="check" id="chck1">
-                        <label for="chck1">Save as default</label>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <div class="ib">
-                        <a href="" class="reset-btn mr25"><span>Reset settings</span></a>
-                        <button type="submit" class="btn btn-clicked btn--moema">Apply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-	</div>
-</div>
-	</div><!-- .landing-wrap -->
 </body>
 </html>

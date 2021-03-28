@@ -14739,7 +14739,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
     .landing-wrap .main-header {
-        min-height:130px
+        min-height:180px
     }
 
     .landing-wrap .main-header .mob-toggle {
@@ -21997,3 +21997,4 @@ html .landing-wrap input[disabled] {
         margin-left: -15px
     }
 }
+
